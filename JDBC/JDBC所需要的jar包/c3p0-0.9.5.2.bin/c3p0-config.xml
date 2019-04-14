@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<c3p0-config>
+  <default-config>
+    <property name="driverClass">com.mysql.jdbc.Driver</property>
+    <property name="jdbcUrl">jdbc:mysql://localhost:3306/test-pool</property>
+    <property name="user">root</property>
+    <property name="password">monkey1024</property>
+    <!-- 初始化连接的数量 -->
+    <property name="initialPoolSize">10</property>
+    <!-- 最大空闲时间，单位是秒 -->
+    <property name="maxIdleTime">30</property>
+    <!-- 池中最大连接的数量 -->
+    <property name="maxPoolSize">100</property>
+    <!-- 池中最小连接的数量 -->
+    <property name="minPoolSize">10</property>
+  </default-config>
+</c3p0-config>
